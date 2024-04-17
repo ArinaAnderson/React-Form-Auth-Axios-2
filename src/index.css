@@ -46,7 +46,7 @@ form {
 }
 
 h1 {
-    color: rgb(249, 194, 255);
+    color: rgb(169, 254, 191);
     text-shadow:
       -1px -1px 0 rgb(104, 7, 115),
       1px -1px 0 rgb(104, 7, 115),
@@ -146,6 +146,7 @@ button {
 }
 
 .btn {
+    margin-top: 40px;
     background-color: #fff;
     transition: transform .1s ease-in-out;
 }
@@ -159,4 +160,10 @@ button {
     transform: scale(0.9);
     color: #fff;
     background-color: rgb(116, 2, 84);
+}
+
+.sign-up-link {
+    padding: 0;
+    margin-bottom: 0;
+    color: rgb(197, 255, 212);
 }
