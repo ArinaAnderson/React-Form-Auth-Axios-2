@@ -61,9 +61,17 @@ const Login = () => {
         } catch(e) {
             if (!e?.response) {
                 setErrMessage('No Server Response');
+            } else if (e.response?.status === 400) {
+                setErrMessage('Missing Username or Password');
+            } else if (e.response?.status === 401) {
+                setErrMessage('Unathorized');
+            } else {
+                setErrMessage('Login Failed')
             }
+            
+            errRef.current.focus();
             // setErrMessage(e.response.data.message);
-            setErrMessage(e.message);
+            // etErrMessage(e.message);
         }
     };
 
